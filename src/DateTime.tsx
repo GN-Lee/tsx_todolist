@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 
 const DateTime = () => {
-  const [day, setDay] = useState("");
   const [date, setDate] = useState("");
   const [time, setTime] = useState("");
 
@@ -17,7 +16,6 @@ const DateTime = () => {
       const timeStr = now.toLocaleTimeString("ko-KR");
       setDate(dateStr);
       setTime(timeStr);
-      setDay(dateStr + " " + timeStr);
     }, 1000);
 
     return () => clearInterval(timeflow);

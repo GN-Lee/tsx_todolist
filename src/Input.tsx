@@ -25,7 +25,7 @@ const Input = ({ addList }: InputValue) => {
         value={value}
         placeholder="오늘의 할 일 입력!"
       />
-      <button onClick={(e) => addTodo} disabled={!value.trim()}>
+      <button onClick={addTodo} disabled={!value.trim()}>
         추가하기
       </button>
     </div>
